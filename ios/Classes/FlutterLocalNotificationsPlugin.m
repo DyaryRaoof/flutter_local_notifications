@@ -79,8 +79,8 @@ typedef NS_ENUM(NSInteger, RepeatInterval) {
     [registrar addApplicationDelegate:instance];
     [registrar addMethodCallDelegate:instance channel:channel];
     if(@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = instance;
+//         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+//         center.delegate = instance;
     }
 }
 
